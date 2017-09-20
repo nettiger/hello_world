@@ -1,0 +1,10 @@
+---
+- hosts: spine,algomatch 
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: Show Version 
+    eos_command:
+      commands:  show version 
+      provider: "{{ eos_connection }}"
