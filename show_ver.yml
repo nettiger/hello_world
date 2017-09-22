@@ -7,3 +7,4 @@
   - name: Show Version 
     eos_command:
       commands:  show version
+      output: json
